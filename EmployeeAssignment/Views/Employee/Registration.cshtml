@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+}
+
+<h1 style="text-align: center; font-size: 1.25rem; color:black">Employee Registration Form</h1>
+<form action="/Home">
+     <div class="form-group">
+    <label for="firstName">First name</label>
+    <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+  </div>
+   <div class="form-group">
+    <label for="lastName">Last name</label>
+    <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+  </div>
+   <div class="form-group">
+    <label for="phone">Enter your phone number</label>
+<input type="tel" class="form-control" id="phone" placeholder="Enter mobile number">
+  </div>
+
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+  </div>
+
+
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-6 col-sm-12">
+               <div class="form-group">
+                 <label for="address">Address 1</label>
+                 <textarea id="address" class="form-control"  placeholder="Enter address 1" autocomplete="address" maxlength="100" required></textarea>
+                </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+               <div class="form-group">
+                 <label for="address">Address 2</label>
+                 <textarea id="address" class="form-control"  placeholder="Enter address 2" autocomplete="address" maxlength="100" required></textarea>
+                </div>
+          </div>
+
+      </div>
+  </div>
+
+    <div class="form-group">
+           <label for="country">Country </label>
+          <input type="text" class="form-control"  placeholder="Enter your country name" id="country" />
+    </div>
+
+       <div class="form-group pt-1">
+            <label for="city">Choose your city</label>
+           <select class="form-select" aria-label="Default select example">
+             <option value="1">Delhi</option>
+             <option value="2">Mumbai</option>
+             <option value="3">Pune</option>
+          </select>
+       </div>
+
+
+   <div class="form-group">
+        <label for="postal-code">ZIP or postal code (optional)</label>
+        <input id="postal-code"class="form-control"  placeholder="Enter postal code" autocomplete="postal-code" maxlength="20">
+    </div>
+   <br />
+
+ 
+     <div class="d-grid gap-2">
+           <button type="submit" class="btn btn-dark">Submit</button>
+</div>
+
+</form>
